@@ -1,0 +1,24 @@
+.card {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  background-color: var(--color-secondary);
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.cardLogo {
+  margin: 0px auto;
+  width: 180px;
+  height: 120px;
+}
+
+.cardText {
+  background-color: var(--color-primary);
+  padding: 10px;
+}

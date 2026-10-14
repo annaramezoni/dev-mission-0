@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #526477;
+}
+:root {
+  --color-primary: #142b43;
+  --color-secondary: #27999d;
+  --color-background: #ffffff;
+  --color-background-light: #f3f6f8;
+  --color-text: #526477;
+}
