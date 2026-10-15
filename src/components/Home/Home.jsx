@@ -11,18 +11,22 @@ export default function Home() {
             className={styles.logo}
             alt="company logo"></img>
         </div>
-        <div className={styles.menu}>
-          <button>Menu 1</button>
-          <button>Menu 2</button>
-          <button>Menu 3</button>
-          <button>Login</button>
-          <img src="./images/burgerMenu.svg" className={styles.burgerMenu} />
-        </div>
-        <div className={styles.dropDownMenu}>
-          <button>Menu 1</button>
-          <button>Menu 2</button>
-          <button>Menu 3</button>
-          <button>Login</button>
+        <div>
+          <div className={styles.menu}>
+            <button>Menu 1</button>
+            <button>Menu 2</button>
+            <button>Menu 3</button>
+            <button>Login</button>
+          </div>
+          <button className={styles.burgerMenu}>
+            <img src="./images/burgerMenu.svg" />
+          </button>
+          <div className={styles.dropDownMenu}>
+            <button>Login</button>
+            <button>Menu 1</button>
+            <button>Menu 2</button>
+            <button>Menu 3</button>
+          </div>
         </div>
       </nav>
 
