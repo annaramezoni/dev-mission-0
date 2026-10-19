@@ -1,6 +1,8 @@
 import Card from "./Card";
 import styles from "./Home.module.css";
+import { useState } from "react";
 export default function Home() {
+  const [clicked, setIsClicked] = useState(false);
   return (
     <div>
       {/* ====== Navbar ====== */}
@@ -18,16 +20,21 @@ export default function Home() {
             <button>Menu 3</button>
             <button>Login</button>
           </div>
-          <button className={styles.burgerMenu}>
-            <img src="./images/burgerMenu.svg" />
-          </button>
-          <div className={styles.dropDownMenu}>
-            <button>Login</button>
-            <button>Menu 1</button>
-            <button>Menu 2</button>
-            <button>Menu 3</button>
-          </div>
+
+          {clicked && (
+            <div className={styles.dropDownMenu}>
+              <button>Login</button>
+              <button>Menu 1</button>
+              <button>Menu 2</button>
+              <button>Menu 3</button>
+            </div>
+          )}
         </div>
+        <button
+          className={styles.burgerMenu}
+          onClick={() => setIsClicked(!clicked)}>
+          <img src="./images/burgerMenu.svg" />
+        </button>
       </nav>
 
       {/* ====== Hero Section ====== */}

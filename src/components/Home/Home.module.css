@@ -10,6 +10,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  height: 100%;
 }
 
 .logo {
@@ -19,7 +20,6 @@
 }
 
 .menu button {
-  margin: 20px 0px;
   cursor: pointer;
   background-color: inherit;
   border: none;
@@ -68,9 +68,9 @@
   width: 25%;
   position: relative;
   top: 10rem;
-  left: 12rem;
+  left: 9rem;
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .textContainer h1 {
@@ -109,18 +109,56 @@
   border-radius: 3px;
 }
 
-/* ======== Hero Section ======== */
+/* ======== Card Section ======== */
 
 .cardSection {
-  min-height: 50vh;
   padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 5%;
 }
 
 /* ======== Media queries ======== */
-@media (max-width: 393px) {
+@media (max-width: 994px) {
+  .cardSection {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3%;
+  }
+  .heroLogo {
+    display: none;
+  }
+  .textContainer {
+    width: 60%;
+    position: static;
+    font-size: 1rem;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 624px) {
+  .cardSection {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .searchField {
+    margin: 0 auto;
+  }
+
+  .searchInput,
+  .searchBtn {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 555px) {
   .navbar {
     position: relative;
   }
@@ -131,6 +169,7 @@
 
   .burgerMenu {
     display: block;
+    background-color: inherit;
   }
 
   .dropDownMenu {
@@ -138,11 +177,10 @@
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 100%;
+    top: 98%;
     right: 0;
-    width: 100px;
+    width: 120px;
     height: 100px;
-    padding-left: 1rem;
     background-color: var(--color-background-light);
     z-index: 3;
   }
@@ -151,36 +189,15 @@
     text-align: left;
     display: block;
     margin: 0;
-    background-color: none;
+    padding-left: 1rem;
     border: none;
     cursor: pointer;
     height: 100%;
-    min-width: 80px;
+    width: 100%;
+    background-color: var(--color-background-light);
   }
 
   .dropDownMenu button:hover {
     background-color: var(--color-background);
-  }
-
-  .heroLogo {
-    display: none;
-  }
-
-  .textContainer {
-    width: 60%;
-    position: static;
-    font-size: 1rem;
-    margin: 2rem;
-  }
-
-  .searchField {
-    margin: 0 auto;
-  }
-
-  .searchInput,
-  .searchBtn {
-    display: block;
-    width: 100%;
-    margin-bottom: 8px;
   }
 }
