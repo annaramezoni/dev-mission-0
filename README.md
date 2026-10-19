@@ -1,6 +1,6 @@
-# Marketing Association NZ
+# About The Project
 
-A responsive website built with React to represent Marketing Association NZ. The project focuses on creating a clean user interface with responsive navigation, a hero section, search functionality, and reusable content cards.
+A wireframe built with React to represent a listing website. The project focuses on creating a clean user interface with responsive navigation, a hero section, and reusable content cards.
 
 ## 🚀 Features
 
@@ -9,13 +9,37 @@ A responsive website built with React to represent Marketing Association NZ. The
 - **Hero Section:** Displays the main heading, company logo, and search field.
 - **CSS Modules:** Uses CSS Modules to organise component styles and avoid naming conflicts.
 
-## 🛠️ Technologies Used
+## 🛠️ Built With
 
 - React
 - JavaScript
 - HTML
 - CSS
 - CSS Modules
+
+## 🧩 Prerequisites
+
+- Node.js and npm to install dependencies and run the development environment.
+
+## ⚙️Installation
+
+- Clone the repository:
+
+git clone https://github.com/annaramezoni/dev-mission-0.git
+
+- Navigate to the project folder:
+
+cd Marketing-Association-NZ
+
+- Install the dependencies:
+
+npm install
+
+- Start the development server:
+
+npm run dev
+
+- Open the local URL displayed in your terminal.
 
 ## 📱 Responsive Design
 
