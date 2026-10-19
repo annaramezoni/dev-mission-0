@@ -1,16 +1,22 @@
-# React + Vite
+# Marketing Association NZ
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive website built with React to represent Marketing Association NZ. The project focuses on creating a clean user interface with responsive navigation, a hero section, search functionality, and reusable content cards.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Responsive Navbar:** Navigation links for desktop screens and a burger menu for smaller screens.
+- **Interactive Burger Menu:** Uses React state (`useState`) to toggle the dropdown menu open and closed.
+- **Hero Section:** Displays the main heading, company logo, and search field.
+- **CSS Modules:** Uses CSS Modules to organise component styles and avoid naming conflicts.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- HTML
+- CSS
+- CSS Modules
 
-## Expanding the Oxlint configuration
+## 📱 Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The website uses CSS media queries to adapt the navigation and layout to different screen sizes. On smaller screens, the burger menu provides access to the dropdown navigation.
